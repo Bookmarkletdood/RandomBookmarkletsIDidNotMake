@@ -3,7 +3,19 @@
 <head>
 <style>
 body {
-background-color: cyan
+background-color: deepskyblue
+}
+p {
+color: lightgreen
+}
+h1 {
+color: lightgreen
+}
+h2 {
+color: lightgreen
+}
+h3 {
+color: lightgreen
 }
 </style>
 <title>Google</title>
@@ -40,6 +52,18 @@ background-color: cyan
 (function() {  var startX, startY, modal, diffX, diffY;  modal = document.createElement('iframe');  modal.setAttribute('src', 'neal.fun');  modal.setAttribute('id', 'rusic-modal');  modal.setAttribute('style', 'position: fixed; z-index: 500000; width: 500px; height: 500px; right: 10px; top: 10px; border-radius: 20px; border: 10px solid #666666; overflow: hidden; background-color: #fff;');  document.body.appendChild(modal);    modal.addEventListener('mousedown', function(event) {    startX = event.clientX;    startY = event.clientY;    diffX = startX - modal.offsetLeft;    diffY = startY - modal.offsetTop;    document.addEventListener('mousemove', onMove);    document.addEventListener('mouseup', onUp);  });    function onMove(event) {    modal.style.left = (event.clientX - diffX) + 'px';    modal.style.top = (event.clientY - diffY) + 'px';  }    function onUp(event) {    document.removeEventListener('mousemove', onMove);    document.removeEventListener('mouseup', onUp);  }})();
 <br>
 <h1>Cursors</h1>
-<h2></h2>
+<br>
+<h2>24x24 cursor (Esc to stop)</h2>
+<a href="javascript:(function(){var d=document,id='AAR24pxBkmklt',el=d.getElementById(id),f=d.querySelectorAll('iframe'),i=0,l=f.length;if(el){function removeFromShadows(root){for(var el of root.querySelectorAll('*')){if(el.shadowRoot){el.shadowRoot.getElementById(id).remove();removeFromShadows(el.shadowRoot);}}}el.remove();if(l){for(i=0;i<l;i++){try{f[i].contentWindow.document.getElementById(id).remove();removeFromShadows(f[i].contentWindow.document);}catch(e){console.log(e)}}}removeFromShadows(d);}else{s=d.createElement('style');s.id=id;s.appendChild(d.createTextNode(%27*{ cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYAgMAAACdGdVrAAAACVBMVEUAAAAAAAD///+D3c/SAAAAAXRSTlMAQObYZgAAACtJREFUCNdjCAUDhqxVQLCSIYEBCDgJUIwOOCnG0FAHKIVfJWGLoE6COhAAxmsXhSV+DZoAAAAASUVORK5CYII=) 12 12, auto !important}%27));function applyToShadows(root){for(var el of root.querySelectorAll('*')){if(el.shadowRoot){el.shadowRoot.appendChild(s.cloneNode(true));applyToShadows(el.shadowRoot);}}}d.getElementsByTagName('head')[0].appendChild(s);for(i=0;i<l;i++){try{f[i].contentWindow.document.getElementsByTagName('head')[0].appendChild(s.cloneNode(true));applyToShadows(f[i].contentWindow.document);}catch(e){console.log(e)}}applyToShadows(d);}})();">24x24 cursor</a>
+<br>
+<h2>44x44 cursor (Esc to stop)</h2>
+<a href="javascript:(function(){ var style = document.createElement(%27style%27), styleContent = document.createTextNode(%27* { cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJBJREFUeNrs2dEKgDAIhWEN3/+VLYtBF12MppHwDxY0uvg4DJpORcSl0bB4uPcwq+oFHu8/956pbtJsAAYMGDBgwIABA044t3pMEgb8VU2XsWdn1o/aUUn4bchPBWNFYWvVidxbCFGmr7YULBs1YDPfsYcXEi9ryvDjAAwYMGDAgAED7nK8bHG7qNLs6nYXYAAheh5j8Qw5fwAAAABJRU5ErkJggg==) 22 22, auto !important}%27); style.appendChild(styleContent ); var caput = document.getElementsByTagName(%27head%27); caput[0].appendChild(style); document.onkeydown=function(e){var n;(%27key%27in(e=e||window.event)?%27Escape%27==e.key||%27Esc%27==e.key:27==e.keyCode)&&(n=document.createElement(%27style%27),document.head.appendChild(n),n.sheet.insertRule(%27*{cursor:revert !important}%27,0))}; })();">44x44 cursor</a>
+<br>
+<h2>Cursor changer</h2>
+<a href="javascript:var c=prompt("what crusor do you want? the options are none,alias,all-scroll,auto,cell,col-resize,copy,e-resize,help,not-allowed,progress, and grabbing. be sure you write them exactly how I did.");(function(){var x = document.getElementsByTagName("*");for (i=0;i<x.length;i++){x[i].style.cursor=c};}());">Cursor changer</a>
+<br>
+<h1>Fonts (changes webpage not text)
+<h2>Bubble text</h2>
+<a href="javascript: (function () {window.g = function () {function G(element) {if (element.childNodes.length > 0)for (var i = 0; i < element.childNodes.length; i++) {if (element.childNodes[i].nodeName.toLowerCase() !== 'style' && element.childNodes[i].nodeName.toLowerCase() !== 'script') {G(element.childNodes[i]);}}if (element.nodeType === Node.TEXT_NODE && element.nodeValue !== '') {var thechars =['ⓐ','ⓑ','ⓒ','ⓓ','ⓔ','ⓕ','ⓖ','ⓗ','ⓘ','ⓙ','ⓚ','ⓛ','ⓜ','ⓝ','ⓞ','ⓟ','ⓠ','ⓡ','ⓢ','ⓣ','ⓤ','ⓥ','ⓦ','ⓧ','ⓨ','ⓩ','Ⓐ','Ⓑ','Ⓒ','Ⓓ','Ⓔ','Ⓕ','Ⓖ','Ⓗ','Ⓘ','Ⓙ','Ⓚ','Ⓛ','Ⓜ','Ⓝ','Ⓞ','Ⓟ','Ⓠ','Ⓡ','Ⓢ','Ⓣ','Ⓤ','Ⓥ','Ⓦ','Ⓧ','Ⓨ','Ⓩ','①','②','③','④','⑤','⑥','⑦','⑧','⑨','⓪'];element.textContent = element.textContent.replace('a', thechars[0]).replace('b', thechars[1]).replace('c', thechars[2]).replace('d', thechars[3]).replace('e', thechars[4]).replace('f', thechars[5]).replace('g', thechars[6]).replace('h', thechars[7]).replace('i', thechars[8]).replace('j', thechars[9]).replace('k', thechars[10]).replace('l', thechars[11]).replace('m', thechars[12]).replace('n', thechars[13]).replace('o', thechars[14]).replace('p', thechars[15]).replace('q', thechars[16]).replace('r', thechars[17]).replace('s', thechars[18]).replace('t', thechars[19]).replace('u', thechars[20]).replace('v', thechars[21]).replace('w', thechars[22]).replace('x', thechars[23]).replace('y', thechars[24]).replace('z', thechars[25]).replace('A', thechars[26]).replace('B', thechars[27]).replace('C', thechars[28]).replace('D', thechars[29]).replace('E', thechars[30]).replace('F', thechars[31]).replace('G', thechars[32]).replace('H', thechars[33]).replace('I', thechars[34]).replace('J', thechars[35]).replace('K', thechars[36]).replace('L', thechars[37]).replace('M', thechars[38]).replace('N', thechars[39]).replace('O', thechars[40]).replace('P', thechars[41]).replace('Q', thechars[42]).replace('R', thechars[43]).replace('S', thechars[44]).replace('T', thechars[45]).replace('U', thechars[46]).replace('V', thechars[47]).replace('W', thechars[48]).replace('X', thechars[49]).replace('Y', thechars[50]).replace('Z', thechars[51]).replace('fax', '℻').replace('1', thechars[52]).replace('2', thechars[53]).replace('3', thechars[54]).replace('4', thechars[55]).replace('5', thechars[56]).replace('6', thechars[57]).replace('7', thechars[58]).replace('8', thechars[59]).replace('9', thechars[60]).replace('0', thechars[61]);}}var html = document.getElementsByTagName('html')[0];G(html);};setInterval(g, 1);})();">Bubble text</a>
 </body>
 </html>
