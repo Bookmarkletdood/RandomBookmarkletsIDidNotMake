@@ -3,23 +3,23 @@
 <head>
 <style>
 body {
-background-color: deepskyblue
+background-color: deepskyblue;
 }
 p {
-color: lightgreen
-  font-family: courier new
+color: lightgreen;
+  font-family: courier new;
 }
 h1 {
-color: lightgreen
-  font-family: courier new
+color: lightgreen;
+  font-family: courier new;
 }
 h2 {
-color: lightgreen
-  font-family: courier new
+color: lightgreen;
+  font-family: courier new;
 }
 h3 {
-color: lightgreen
-  font-family: courier new
+color: lightgreen;
+  font-family: courier new;
 }
 </style>
 <title>Google</title>
@@ -51,9 +51,11 @@ color: lightgreen
 <br>
 <h2>Circle game</h2>
 <a href="javascript:(function() {  var startX, startY, modal, diffX, diffY;  modal = document.createElement('iframe');  modal.setAttribute('src', 'https://neal.fun/perfect-circle/');  modal.setAttribute('id', 'rusic-modal');  modal.setAttribute('style', 'position: fixed; z-index: 500000; width: 500px; height: 500px; right: 10px; top: 10px; border-radius: 20px; border: 10px solid #047a0e; overflow: hidden; background-color: #fff;');  document.body.appendChild(modal);    modal.addEventListener('mousedown', function(event) {    startX = event.clientX;    startY = event.clientY;    diffX = startX - modal.offsetLeft;    diffY = startY - modal.offsetTop;    document.addEventListener('mousemove', onMove);    document.addEventListener('mouseup', onUp);  });    function onMove(event) {    modal.style.left = (event.clientX - diffX) + 'px';    modal.style.top = (event.clientY - diffY) + 'px';  }    function onUp(event) {    document.removeEventListener('mousemove', onMove);    document.removeEventListener('mouseup', onUp);  }})();">Circle game</a>
-<br>
+<!-- End of the games :( -->
+  <!-- But also start of the cursors :) -->
+  <br>
   <h2>Neal.fun website</h2>
-<a href="(function() {  var startX, startY, modal, diffX, diffY;  modal = document.createElement('iframe');  modal.setAttribute('src', 'neal.fun');  modal.setAttribute('id', 'rusic-modal');  modal.setAttribute('style', 'position: fixed; z-index: 500000; width: 500px; height: 500px; right: 10px; top: 10px; border-radius: 20px; border: 10px solid #666666; overflow: hidden; background-color: #fff;');  document.body.appendChild(modal);    modal.addEventListener('mousedown', function(event) {    startX = event.clientX;    startY = event.clientY;    diffX = startX - modal.offsetLeft;    diffY = startY - modal.offsetTop;    document.addEventListener('mousemove', onMove);    document.addEventListener('mouseup', onUp);  });    function onMove(event) {    modal.style.left = (event.clientX - diffX) + 'px';    modal.style.top = (event.clientY - diffY) + 'px';  }    function onUp(event) {    document.removeEventListener('mousemove', onMove);    document.removeEventListener('mouseup', onUp);  }})();">Circle game</a>
+<a href="javascript:(function() {  var startX, startY, modal, diffX, diffY;  modal = document.createElement('iframe');  modal.setAttribute('src', 'neal.fun');  modal.setAttribute('id', 'rusic-modal');  modal.setAttribute('style', 'position: fixed; z-index: 500000; width: 500px; height: 500px; right: 10px; top: 10px; border-radius: 20px; border: 10px solid #666666; overflow: hidden; background-color: #fff;');  document.body.appendChild(modal);    modal.addEventListener('mousedown', function(event) {    startX = event.clientX;    startY = event.clientY;    diffX = startX - modal.offsetLeft;    diffY = startY - modal.offsetTop;    document.addEventListener('mousemove', onMove);    document.addEventListener('mouseup', onUp);  });    function onMove(event) {    modal.style.left = (event.clientX - diffX) + 'px';    modal.style.top = (event.clientY - diffY) + 'px';  }    function onUp(event) {    document.removeEventListener('mousemove', onMove);    document.removeEventListener('mouseup', onUp);  }})();">Circle game</a>
 <h1>Cursors</h1>
 <br>
 <h2>24x24 cursor (Esc to stop)</h2>
@@ -63,7 +65,7 @@ color: lightgreen
 <a href="javascript:(function(){ var style = document.createElement(%27style%27), styleContent = document.createTextNode(%27* { cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJBJREFUeNrs2dEKgDAIhWEN3/+VLYtBF12MppHwDxY0uvg4DJpORcSl0bB4uPcwq+oFHu8/956pbtJsAAYMGDBgwIABA044t3pMEgb8VU2XsWdn1o/aUUn4bchPBWNFYWvVidxbCFGmr7YULBs1YDPfsYcXEi9ryvDjAAwYMGDAgAED7nK8bHG7qNLs6nYXYAAheh5j8Qw5fwAAAABJRU5ErkJggg==) 22 22, auto !important}%27); style.appendChild(styleContent ); var caput = document.getElementsByTagName(%27head%27); caput[0].appendChild(style); document.onkeydown=function(e){var n;(%27key%27in(e=e||window.event)?%27Escape%27==e.key||%27Esc%27==e.key:27==e.keyCode)&&(n=document.createElement(%27style%27),document.head.appendChild(n),n.sheet.insertRule(%27*{cursor:revert !important}%27,0))}; })();">44x44 cursor</a>
 <br>
 <h2>Cursor changer</h2>
-<a href="javascript:var c=prompt("what crusor do you want? the options are none,alias,all-scroll,auto,cell,col-resize,copy,e-resize,help,not-allowed,progress, and grabbing. be sure you write them exactly how I did.");(function(){var x = document.getElementsByTagName("*");for (i=0;i<x.length;i++){x[i].style.cursor=c};}());">Cursor changer</a>
+<a href="javascript:var c=prompt('what crusor do you want? the options are none,alias,all-scroll,auto,cell,col-resize,copy,e-resize,help,not-allowed,progress, and grabbing. be sure you write them exactly how is.');(function(){var x = document.getElementsByTagName("*");for (i=0;i<x.length;i++){x[i].style.cursor=c};}());">Cursor changer</a>
 <br>
 <h1>Fonts (changes webpage not text)
 <h2>Bubble text</h2>
@@ -72,5 +74,8 @@ color: lightgreen
   <h1>Hack stuff</h1>
   <br>
   <h1>Hacks</h1>
+  <br>
+  <h2>Autoclicker</h2>
+  <a href="javascript:var DELAY = 1;var autoClickerStyleElement = document.createElement("style");autoClickerStyleElement.innerHTML="*{cursor: crosshair !important;}";document.body.appendChild(autoClickerStyleElement);function addClicker(e) {if(!e.isTrusted) {return;}if(e.target.classList.contains("auto-clicker-target")) {e.target.classList.remove("auto-clicker-target");} else {e.target.classList.add("auto-clicker-target");}document.body.removeChild(autoClickerStyleElement);document.body.removeEventListener("click", addClicker);e.preventDefault();autoClick(e.target);}function autoClick(element) {if(element.classList.contains("auto-clicker-target")) {element.click();setTimeout(function(){ autoClick(element); }, DELAY);}}document.body.addEventListener("click", addClicker, 0);"
   </body>
 </html>
