@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Pop-up Window Demo</title>
+    <title>YouAreAnIdiot</title>
     <style>
         body {
             text-align: center;
@@ -11,6 +11,11 @@
             margin-top: 20px;
         }
     </style>
+</head>
+<body>
+    <h1>Pop-up Window Demo</h1>
+    <button id="popupButton" onclick="openPopup()">Open Pop-up</button>
+
     <script>
         function openPopup() {
             var popup = window.open("", "popupWindow", "width=400,height=300");
@@ -23,9 +28,5 @@
             popup.document.write("</body></html>");
         }
     </script>
-</head>
-<body>
-    <h1>Pop-up Window Demo</h1>
-    <button id="popupButton" onclick="openPopup()">Open Pop-up</button>
 </body>
 </html>
